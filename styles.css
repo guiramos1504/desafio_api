@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image:url(./assets/R.jpeg);
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 12em;
+    width: 100%;
+}
+
+header section {
+    padding: 2em 1em 1em;
+    gap: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-weight: 600;
+    color: white;
+}
+
+header section img {
+    width: 5em;
+}
+
+#searchMovie, #serchMovie:focus {
+    background: none;
+    border: none;
+    font-weight: 600;
+    outline: none;
+}
+
+#areaButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: white;
+    border-radius: 8px;
+    width: 12em;
+    height: 3em;
+    color: rgb(43, 43, 43);
+    gap: 1em;
+}
+
+#areaButton:hover {
+    background-color: rgb(216, 216, 216);
+    cursor: pointer;
+}
+
+#searchMovie:hover {
+    cursor: pointer;
+}
+
+#areaMovie {
+    display: flex;
+    width: 45%;
+    height: 50%;
+    gap: 2em;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1em;
+    margin: 0 0 2em;
+}
+
+#showIMGMovie {
+    display: flex;
+    width: 40%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#showIMGMovie img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+#showInfos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    gap: 1em;
+}
+
+#movieTitle {
+    font-weight: 600;
+}
+
+#movieDescription {
+    font-weight: 400;
+    font-size: 0.7em;
+}
+
+#subtitle {
+    font-size: 0.9em;
+    background-color: rgb(255, 255, 255, 60%);
+    color: rgb(66, 66, 66);
+    padding: 1em 2em;
+    border-radius: 50px;
+    text-align: center;
+    margin: 2em;
+}
+
+#sectionSub {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 1080px) {
+    header {
+        padding-top: 1em;
+        height: 20em;
+    }
+    h1 {
+        font-size: 3em;
+    }
+    
+    header section img {
+        width: 10em;
+    }
+    #areaMovie {
+        width: 90%;
+        border-radius: 2em;
+        margin-bottom: 8em;
+    }
+    #areaButton {
+        width: 65%;
+        height: 12em;
+        border-radius: 2em;
+        gap: 3em;
+    }
+    #areaButton img{
+        width: 7em;
+    }
+    #movieTitle {
+        font-size: 2em;
+    }
+    #movieDescription {
+        font-weight: 400;
+        font-size: 1.4em;
+    }
+    #searchMovie, #serchMovie:focus {
+        font-size: 2.5em;
+    }
+    #showIMGMovie {
+        width: 100%;
+    }
+    #showIMGMovie img {
+        border-radius: 15px;
+    }
+    #sectionSub {
+        width: 100%;
+        height: 8%;
+        margin: 0;
+        bottom: 0;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #subtitle {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0.5em 2em;
+        border-radius: 0px;
+        text-align: center;
+        font-size: 2em;
+    }
+  }
